@@ -74,9 +74,8 @@ export default function App() {
   const currentData = onboardingData[currentScreen];
 
   return (
-    <>
-      <StatusBar barStyle="light-content" backgroundColor={currentData.bgColor} />
-      <SafeAreaView style={[styles.container, { backgroundColor: currentData.bgColor }]}>
+    <View style={[styles.container, { backgroundColor: currentData.bgColor }]}>
+      {Platform.OS !== 'web' && <StatusBar barStyle="light-content" backgroundColor={currentData.bgColor} />}
         {/* Skip Button */}
         <TouchableOpacity style={styles.skipButton} onPress={skipOnboarding}>
           <Text style={styles.skipText}>Пропустить</Text>
@@ -133,16 +132,15 @@ export default function App() {
             </TouchableOpacity>
           )}
         </View>
-      </SafeAreaView>
-    </>
+    </View>
   );
 }
 
 // Главное приложение (показывается после onboarding)
 function MainApp() {
   return (
-    <SafeAreaView style={styles.mainAppContainer}>
-      <StatusBar barStyle="dark-content" backgroundColor="#f8fafc" />
+    <View style={styles.mainAppContainer}>
+      {Platform.OS !== 'web' && <StatusBar barStyle="dark-content" backgroundColor="#f8fafc" />}
       <View style={styles.mainAppContent}>
         <Text style={styles.welcomeTitle}>🎉 Добро пожаловать в Flyo!</Text>
         <Text style={styles.welcomeSubtitle}>Куда отправимся сегодня?</Text>
@@ -151,7 +149,7 @@ function MainApp() {
           <Text style={styles.exploreButtonText}>Исследовать города 🌍</Text>
         </TouchableOpacity>
       </View>
-    </SafeAreaView>
+    </View>
   );
 }
 

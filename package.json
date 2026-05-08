@@ -1,0 +1,36 @@
+{
+  "name": "flyo",
+  "version": "1.0.0",
+  "description": "All-in-one travel booking platform - find and book restaurants, hotels, entertainment and tours worldwide",
+  "main": "App.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "expo": "~49.0.0",
+    "react": "18.2.0",
+    "react-native": "0.72.6",
+    "@expo/vector-icons": "^13.0.0",
+    "expo-linear-gradient": "~12.3.0",
+    "react-native-gesture-handler": "~2.12.0",
+    "react-native-reanimated": "~3.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0"
+  },
+  "keywords": [
+    "react-native",
+    "expo",
+    "travel",
+    "booking",
+    "restaurants",
+    "hotels",
+    "entertainment",
+    "flyo"
+  ],
+  "author": "solvexcrm",
+  "license": "MIT"
+}

@@ -1,0 +1,42 @@
+# Expo
+.expo/
+dist/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
+# macOS
+.DS_Store
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Ruby
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Temporary files
+*.tmp
+*.temp
+
+# Logs
+*.log
+
+# Vim
+*.swp
+*.swo
+
+# VSCode
+.vscode/
+
+# IntelliJ
+.idea/

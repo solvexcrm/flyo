@@ -4,10 +4,8 @@
     "slug": "flyo",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#667eea"
     },
@@ -19,14 +17,10 @@
       "bundleIdentifier": "com.solvex.flyo"
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#667eea"
-      },
       "package": "com.solvex.flyo"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "bundler": "metro"
     },
     "description": "All-in-one travel booking platform - find and book restaurants, hotels, entertainment and tours worldwide",
     "keywords": ["travel", "booking", "restaurants", "hotels", "entertainment"]
